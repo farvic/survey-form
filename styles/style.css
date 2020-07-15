@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    color: white;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: black; */
+    background-image:linear-gradient( 90deg,rgba(51, 102, 204, 0.9),rgba(153, 153, 255, 0.5) ),
+    url(https://insights.dice.com/wp-content/uploads/2018/03/Hipster-Developer-Dice.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 3rem auto 1rem auto;    
+}
+
+/* @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}*/
+  
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+.header {
+    text-align: center;
+    padding: 0 0.625rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.25rem;
+}
+
+label {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+span {
+    margin-left: 0.25rem;
+    font-size: 1rem;
+}
+
+.input-selection {
+    margin-top: -4px;
+    margin-right: 0.5rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+}
+
+.input-box {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #8a8a8a;
+    display: block;
+    margin-bottom: 1rem;
+    color: #495057;
+    border-radius: 0.25rem;
+}
+
+.feedback-box {
+    width: 100%;
+    padding: 0.5rem;
+    min-height: 100px;
+}
+
+.submit {
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+input, select, textarea, button {
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
